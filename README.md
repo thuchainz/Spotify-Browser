@@ -22,4 +22,4 @@ Install dependencies
 
 ## Preview
 
-![](https://github.com/thuchainz/Spotify-Browser/blob/main/preview.gif)
+<img src="/preview.gif">
