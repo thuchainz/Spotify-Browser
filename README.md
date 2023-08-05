@@ -21,3 +21,5 @@ Install dependencies
 `ng serve --open`
 
 ## Preview
+
+![](https://github.com/thuchainz/Spotify-Browser/blob/main/preview.gif)
