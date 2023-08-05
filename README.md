@@ -1,8 +1,8 @@
-# spotify-browser
+# Spotify-Browser
  
-Webpage built in Angular to browse music through Spotify's API.
+Webpage built in Angular and Node.js/Express to browse music through Spotify's API. Users can log in with an existing Spotify account and search for artists, albums, and tracks. Information like top tracks and genres is displayed. Users can navigate between pages and open links on Spotify.
 
-## setup
+## Setup
 
 Install Node and Angular through npm
 
@@ -12,10 +12,12 @@ Install dependencies
 
 `npm install`
 
-## run webserver
+## Run webserver
 
 `npm start`
 
-## run client
+## Run client
 
 `ng serve --open`
+
+## Preview
