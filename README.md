@@ -4,7 +4,7 @@ Webpage built in Angular and Node.js/Express to browse music through Spotify's A
 
 ## Setup
 
-Install Node and Angular through npm
+Install Angular
 
 `npm install -g @angular/cli`
 
@@ -12,7 +12,7 @@ Install dependencies
 
 `npm install`
 
-## Run webserver
+## Run server
 
 `npm start`
 
