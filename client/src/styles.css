@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+	background-color: var(--bs-dark);
+	color: var(--bs-light);
+	font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+	font-weight: 900;
+}
+
+h2, h3 {
+	font-weight: 700;
+}
+
+button, .btn {
+	background: var(--bs-success);
+	border: none;
+	color: var(--bs-light);
+	margin: 10px;
+}
+
+a {
+	color: var(--bs-teal);
+}

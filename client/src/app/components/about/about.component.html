@@ -1,0 +1,10 @@
+<!--Click callback to load about me information-->
+<button class="btn btn-light" (click)="getAboutMe()">Load info about me</button>
+<!--Bind to user name-->
+<h3>Logged in user: {{name}}</h3>
+<!--Bind img src's to profile_pic-->
+<img src="{{profile_pic}}">
+<p>
+	<!--Bind link's href to profile_link-->
+	<a class="btn btn-light" target="_blank" href="{{profile_link}}">Open profile on Spotify</a>	
+</p>

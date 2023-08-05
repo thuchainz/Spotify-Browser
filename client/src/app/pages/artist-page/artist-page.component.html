@@ -1,0 +1,42 @@
+<div *ngIf="artist" class="row">
+	<div class="col-6">
+		<!--Populate with artist name-->
+		<h1>{{artist.name}}</h1>
+		<!--Populate with artist image URL-->
+		<img id="artistImg" src="{{artist.imageURL}}">
+		<p>
+			<!--Link to artist page on spotify, display artist name-->
+			<a class="btn btn-light" role="button" target="_blank" href="{{artist.url}}">Open {{artist.name}} on Spotify</a>
+		</p>
+	</div>
+	<div class="col-2">
+		<h3>Genres</h3>
+		<ul>
+			<!--Loop over artist's genres and display them-->
+			<li *ngFor="let genre of artist.genres">{{genre}}</li>
+		</ul>
+		<p>
+		</p>
+	</div>
+	<div class="col-4">
+		<!--Display artist name-->
+		<h3>{{artist.name}}'s Top Tracks</h3>
+		<!--Display the artist's top tracks-->
+		<app-track-list [tracks]="topTracks"></app-track-list>
+	</div>
+</div>
+
+<div *ngIf="artist" class="row">
+	<div class="col-6">
+		<!--Display artist name-->
+		<h3>{{artist.name}}'s Albums</h3>
+		<!--Display a carousel component for the artist's albums. Bind carousel's resources and give it a static carouselId.-->
+		<app-carousel [carouselId]="'albums'" [resources]="albums"></app-carousel>
+	</div>
+	<div class="col-6">
+		<h3>Similar Artists</h3>
+		<!--Display a carousel component for similar artists. Bind carousel's resources and give it a static carouselId.-->
+		<app-carousel [carouselId]="'relatedArtists'" [resources]="relatedArtists"></app-carousel>
+	</div>
+
+</div>
